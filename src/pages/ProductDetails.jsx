@@ -5,11 +5,9 @@ import { useEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../app/features/cart/cartSlice';
-// FIX (suggestion): replaced bare module-object import with proper Context ref
 import { useUI } from '../context/UIContext';
 import { formatCurrency } from '../utils/formatCurrency';
 import Skeleton from 'react-loading-skeleton';
-// FIX #9: Skeleton CSS was missing — skeletons had no animation or styling
 import 'react-loading-skeleton/dist/skeleton.css'
 import { getProductById } from '../services/api';
 ;

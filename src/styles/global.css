@@ -8,7 +8,6 @@ body.light {
   color: #000;
 }
 
-/* FIX: dark mode text was #bc4747 (red) — should be near-white for readability */
 body.dark {
   background: #121212;
   color: #ccd27e;

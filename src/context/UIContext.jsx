@@ -3,7 +3,6 @@ import { createContext, useContext, useState, useEffect, useRef } from "react";
 const UIContext = createContext();
 
 export const UIProvider = ({ children }) => {
-  // FIX: Theme was not persisted — initialise from localStorage
   const [theme, setThemeState] = useState(
     () => localStorage.getItem("theme") || "light"
   );
