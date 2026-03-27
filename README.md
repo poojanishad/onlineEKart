@@ -44,12 +44,7 @@ npm run dev
 
 ---
 
-## Dummy Public API Used
-
-* https://dummyjson.com/products
-
-
-##  Assumptions & Notes
+##  Additional Notes
 
 * The API used does not provide real clothing sizes.
   Therefore, **sizes are simulated based on product category and ID** for UI demonstration.
