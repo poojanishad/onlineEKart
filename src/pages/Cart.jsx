@@ -10,7 +10,7 @@ import {
 } from '../app/features/cart/cartSlice';
 import { formatCurrency } from '../utils/formatCurrency';
 
-const CLOTHING_CATEGORIES = ['mens-shirts', 'womens-dresses', 'tops', 'womens-tops'];
+const CLOTHING_CATEGORIES = ['mens-shirts', 'mens-shoes'];
 
 const Page = styled.div`
   background: #f3f1ec;

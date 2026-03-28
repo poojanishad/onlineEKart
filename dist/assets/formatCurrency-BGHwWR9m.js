@@ -1,1 +1,0 @@
-var e=e=>new Intl.NumberFormat(`en-US`,{style:`currency`,currency:`USD`}).format(e);export{e as t};
