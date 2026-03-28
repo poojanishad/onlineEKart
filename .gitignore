@@ -1,2 +1,9 @@
 .vercel
 node_modules
+dist/
+node_modules/
+.vite/
+*.log
+*.zip
+.env
+*.tsbuildinfo

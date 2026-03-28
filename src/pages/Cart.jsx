@@ -10,7 +10,7 @@ import {
 } from '../app/features/cart/cartSlice';
 import { formatCurrency } from '../utils/formatCurrency';
 
-const CLOTHING_CATEGORIES = ['mens-shirts', 'womens-dresses', 'tops', 'womens-tops'];
+const CLOTHING_CATEGORIES = ['mens-shirts', 'mens-shoes'];
 
 const Page = styled.div`
   background: #f3f1ec;
@@ -117,12 +117,7 @@ const Cart = () => {
   return (
     <Page>
       <Container>
-        <Title>
-          <FontAwesomeIcon icon={faCartShopping} />
-          Your Cart
-        </Title>
-
-        {items.length === 0 && (
+          {items.length === 0 && (
           <Empty>
             <FontAwesomeIcon icon={faCartShopping} size="3x" style={{ opacity: 0.3 }} />
             <p style={{ marginTop: '10px' }}>Your cart is empty</p>

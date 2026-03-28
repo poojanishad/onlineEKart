@@ -142,8 +142,8 @@ const Home = () => {
 
   const enrichedItems = useMemo(() => {
     const sizeMap = {
-      'mens-shirts': ['M', 'L', 'XL'],
-      'mens-shoes': ['L', 'XL'],
+      'mens-shirts': ['S', 'M', 'L', 'XL'],
+      'mens-shoes': ['M', 'L', 'XL'],
 
     };
 
@@ -216,7 +216,6 @@ const Home = () => {
           {showSizeFilter && (
             <Select value={size} onChange={(e) => setSize(e.target.value)}>
               <option value="">All Sizes</option>
-              <option value="S">S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
