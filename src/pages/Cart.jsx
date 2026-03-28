@@ -117,12 +117,7 @@ const Cart = () => {
   return (
     <Page>
       <Container>
-        <Title>
-          <FontAwesomeIcon icon={faCartShopping} />
-          Your Cart
-        </Title>
-
-        {items.length === 0 && (
+          {items.length === 0 && (
           <Empty>
             <FontAwesomeIcon icon={faCartShopping} size="3x" style={{ opacity: 0.3 }} />
             <p style={{ marginTop: '10px' }}>Your cart is empty</p>

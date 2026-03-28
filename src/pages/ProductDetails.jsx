@@ -171,7 +171,7 @@ const ProductDetails = () => {
     const fetchData = async () => {
       try {
         setError(null);
-        setProduct(null); 
+        setProduct(null);
         const res = await getProductById(id);
         if (!res.data) throw new Error('Product not found');
         setProduct(res.data);
@@ -313,7 +313,7 @@ const ProductDetails = () => {
               <div style={{ margin: '12px 0' }}>
                 <strong>Select Size:</strong>
                 <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
-                  {['S', 'M', 'L', 'XL'].map((s) => (
+                  {['M', 'L', 'XL'].map((s) => (
                     <button
                       key={s}
                       onClick={() => setSelectedSize(s)}
@@ -354,7 +354,9 @@ const ProductDetails = () => {
                 )}
               </AddToCartBtn>
 
-              <BuyNow>Buy Now</BuyNow>
+              <BuyNow onClick={() => { handleAddToCart(); navigate('/cart'); }}>
+                Buy Now
+              </BuyNow>
             </Actions>
           </Info>
 
