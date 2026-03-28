@@ -41,9 +41,32 @@ npm run dev
 * `useMemo`, `useCallback` (optimization)
 * Infinite scroll using `IntersectionObserver`
 * Debounced search input
-
 ---
+## Features
+Home Page (Product Listing)
+Fetches 100 products from API
+Displays image, title, price, and short description
+Search (by title) and category filter
+Size filter (available only for mens-shirts & mens-shoes)
+Infinite scrolling (no pagination)
+Skeleton loading and error handling
 
+Product Details
+Large image with thumbnails
+Title, category, full description, and price
+Size selection (for clothing items)
+Add to Cart with animation
+
+Cart
+Add/remove items
+Increase/decrease quantity
+Persistent cart using localStorage
+
+UI/UX
+Light/Dark mode toggle
+Fully responsive design
+Smooth animations and hover effects
+---
 ##  Additional Notes
 
 * The API used does not provide real clothing sizes.
